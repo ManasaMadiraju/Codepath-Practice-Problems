@@ -1,3 +1,5 @@
+'''Write a function shuffle() that accepts a list cards of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn]. Return the list in the form [x1,y1,x2,y2,...,xn,yn].'''
+
 def shuffle(cards):
     result = []
     n = len(cards) // 2

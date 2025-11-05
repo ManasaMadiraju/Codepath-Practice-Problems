@@ -1,3 +1,5 @@
+'''Write a function get_odds() that takes in a list of integers nums and returns a new list containing all the odd numbers in nums.'''
+
 def get_odds(nums):
     odds = []
     for n in nums:

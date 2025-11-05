@@ -1,3 +1,5 @@
+'''Write a function nanana_batman() that accepts an integer x and prints the string "nanana batman!" where "na" is repeated x times. Do not use the * operator.'''
+
 def nanana_batman(x):
     result = ""
     for i in range(x):
