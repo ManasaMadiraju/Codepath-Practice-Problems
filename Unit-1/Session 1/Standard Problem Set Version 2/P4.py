@@ -1,3 +1,5 @@
+'''Implement a function get_last() that accepts a list of items items and returns the last item in the list. If the list is empty, return None.'''
+
 def get_last(items):
     for i in items:
         if not items:
