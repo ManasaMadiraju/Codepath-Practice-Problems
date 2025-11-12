@@ -16,7 +16,6 @@ def find_missing_clues(clues, lower, upper):
             end = curr - 1
             result.append([start, end])
         prev = curr
-    
     return result
 
 if __name__ == '__main__':
