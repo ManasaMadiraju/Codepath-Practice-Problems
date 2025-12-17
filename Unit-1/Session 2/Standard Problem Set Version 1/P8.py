@@ -2,6 +2,7 @@
 
 def exclusive_elemts(lst1, lst2):
     return list(set(lst1) ^ set(lst2))
+    # ('^' is symmetric difference)
 
 
 if __name__ == '__main__':
