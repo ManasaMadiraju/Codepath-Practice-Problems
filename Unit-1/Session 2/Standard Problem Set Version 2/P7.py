@@ -4,12 +4,12 @@ Write a function highest_altitude() that accepts an integer array gain of length
 
 
 def highest_altitude(gain):
-    altitudes = [0]
-    net_gain = 0
-    for i in range(len(gain)):
-        net_gain += gain[i]
-        altitudes.append(net_gain)
-    return max(altitudes)
+    current_altitude = 0
+    max_altitude = 0
+    for g in gain:
+        current_altitude += g
+        max_altitude = max(max_altitude, current_altitude)
+    return max_altitude
 
 
 if __name__ == '__main__':
