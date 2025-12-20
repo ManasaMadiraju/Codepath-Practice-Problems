@@ -9,9 +9,23 @@ Write a function expose_superman() that accepts a 2D array trust where trust[i] 
 
 Return the label of Superman if he is hiding amongst the population and can be identified, or return -1 otherwise.'''
 
-
 def expose_superman(trust, n):
-    pass
+    population = set()
+    hashmap = {}
+    possible_supermans = []
+    for i in trust: #[1,3]
+        hashmap[i[0]] = i[1]
+        population.add(i[0])
+        population.add(i[1])
+    for value in population:
+        if value not in hashmap.keys():
+            possible_supermans.append(value)
+
+    trusted_people = list(hashmap.values())
+    for superman in possible_supermans:
+        if trusted_people.count(superman) == n - 1:
+            return superman   
+    return -1
 
 
 if __name__ == '__main__':
